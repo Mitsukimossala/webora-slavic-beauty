@@ -5,15 +5,15 @@
 <style>
 :root{--bg:#faf8f5;--ink:#1b1a19;--taupe:#a08d7d;--line:#e6dfd7}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:'Manrope',sans-serif;font-weight:300;background:var(--bg);color:var(--ink);letter-spacing:.01em}
-header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:18px 22px;mix-blend-mode:difference;color:#fff}
+header{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:18px 22px;color:#fff;background:rgba(27,26,25,.55);backdrop-filter:blur(8px)}
 header b{font-family:'Bodoni Moda';font-weight:400;letter-spacing:.35em;font-size:.85rem}
 header a{color:#fff;font-size:.7rem;letter-spacing:.3em;text-decoration:none;text-transform:uppercase}
 .hero{height:100svh;position:relative;overflow:hidden;background:#000}
-.hero img{width:100%;height:100%;object-fit:cover;opacity:.78;animation:zoom 14s ease-out forwards}@keyframes zoom{from{transform:scale(1.15)}to{transform:scale(1)}}
-.hero .t{position:absolute;left:22px;right:22px;bottom:48px;color:#fff}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.05) 30%,rgba(0,0,0,.7))}.hero img{width:100%;height:100%;object-fit:cover;opacity:.9;animation:zoom 14s ease-out forwards}@keyframes zoom{from{transform:scale(1.15)}to{transform:scale(1)}}
+.hero .t{z-index:2;position:absolute;left:22px;right:22px;bottom:48px;color:#fff}
 .hero h1{font-family:'Bodoni Moda';font-weight:400;font-size:clamp(3rem,14vw,7rem);line-height:.95}
 .hero h1 i{font-weight:400}
-.hero p{font-size:.72rem;letter-spacing:.35em;text-transform:uppercase;margin-top:14px}
+.hero p{font-size:.8rem;font-weight:600;letter-spacing:.35em;text-transform:uppercase;margin-top:14px}
 .line{height:1px;background:#fff;width:0;animation:ln 2s 1s forwards;margin:18px 0}@keyframes ln{to{width:80px}}
 .btn{display:inline-block;padding:16px 30px;background:#fff;color:var(--ink);text-decoration:none;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600}
 .btn.dark{background:var(--ink);color:#fff}
@@ -37,10 +37,10 @@ footer{text-align:center;padding:30px;font-size:.62rem;letter-spacing:.3em;text-
 @media(min-width:820px){.about,.info{grid-template-columns:1fr 1fr;align-items:center}.rev blockquote{min-width:32%}}
 </style></head><body>
 <header><b>SLAVIC BEAUTY</b><a href="https://www.planity.com/slavic-beauty-92250-la-garenne-colombes">Réserver</a></header>
-<div class="hero"><img src="img/institut.jpg" alt="Institut Slavic Beauty"><div class="t"><p>La Garenne-Colombes</p><div class="line"></div>
+<div class="hero"><img src="img/cabine.jpg" alt="Institut Slavic Beauty"><div class="t"><p>La Garenne-Colombes</p><div class="line"></div>
 <h1>Visage,<br><i>ongles</i><br>&amp; regard.</h1><p style="margin:22px 0">Un cocon pour prendre soin de vous</p>
 <a class="btn" href="https://www.planity.com/slavic-beauty-92250-la-garenne-colombes">Prendre rendez-vous</a></div></div>
-<section class="about"><img class="up" src="img/cabine.jpg" alt=""><div class="up"><div class="lbl">L'institut</div><h2>Douceur, précision<br><i>et authenticité.</i></h2>
+<section class="about"><img class="up" src="img/institut.jpg" alt="L'institut"><div class="up"><div class="lbl">L'institut</div><h2>Douceur, précision<br><i>et authenticité.</i></h2>
 <p>Aleksandra vous reçoit dans son institut du centre-ville et réalise chaque prestation avec minutie. Spécialiste du soin du visage, elle vous conseille les soins adaptés à votre peau, et son savoir-faire s'étend aux ongles et à la beauté du regard.</p></div></section>
 <section><div class="lbl up">La carte</div><h2 class="up">Les soins signature</h2>
 <div class="cat up"><h3>Visage</h3><div class="row"><span>Soin hydrafacial</span><span>75 €</span></div><div class="row"><span>Soin purifiant</span><span>70 €</span></div><div class="row"><span>ReBioPeel Cl3</span><span>70 €</span></div><div class="row"><span>Hollywood Carbon Peel</span><span>80 €</span></div></div>
